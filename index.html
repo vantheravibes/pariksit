@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pariksit — Premier JEE & NEET Academy | Rourkela</title>
+  <meta name="description" content="Pariksit Coaching Institute — High-performance coaching for JEE Main, JEE Advanced, NEET and Foundation in Rourkela combining rigorous STEM academics with timeless ethical values." />
+
+  <!-- Fonts: Cinzel, Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <!-- Unified Minimalist Design System CSS with Cache Buster -->
+  <link rel="stylesheet" href="css/glassmorphism.css?v=32" />
+</head>
+<body>
+
+  <!-- Hardware-Accelerated Harmonious Ambient Background -->
+  <div class="bg-ambient-layer"></div>
+
+  <!-- Full-Width Sticky Top Nav with Horizontal Scroll Progress Bar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo" data-tooltip="Pariksit — Premier JEE & NEET Academy">
+          <img src="images/logo.png" alt="Pariksit Logo" class="brand-logo-img" width="42" height="42" />
+          <span class="brand-name">Pariksit</span>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#facilities">Campus</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-utilities">
+          <!-- Search Pill with Modern Tooltip -->
+          <div class="search-pill" data-tooltip="Live search by student, teacher or exam">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-tertiary);">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="globalSearchInput" placeholder="Search..." />
+          </div>
+
+          <a href="#admissions" class="btn-pill btn-pill-dark" data-tooltip="Book a 1-on-1 counseling session">
+            Admissions
+          </a>
+
+          <!-- Mobile Hamburger Toggle Button -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Horizontal Scroll Reading Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <img src="images/logo.png" alt="Pariksit Logo" class="brand-logo-img" width="34" height="34" />
+        <span class="brand-name" style="font-size: 1.15rem;">Pariksit</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="mobile-search-pill">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-tertiary);">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="mobileSearchInput" placeholder="Search results, faculty..." />
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About & Pedagogy</a></li>
+      <li><a href="#analytics" class="mobile-nav-link">Analytics & Records</a></li>
+      <li><a href="#results" class="mobile-nav-link">Result Posters</a></li>
+      <li><a href="#faculty" class="mobile-nav-link">Faculty & Mentors</a></li>
+      <li><a href="#facilities" class="mobile-nav-link">Campus Facilities</a></li>
+      <li><a href="#admissions" class="mobile-nav-link">Admissions & Counseling</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="#admissions" class="btn-pill btn-pill-dark mobile-admissions-btn">
+        Book 1-on-1 Counseling
+      </a>
+    </div>
+  </div>
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+
+  <!-- Editorial Hero Section with Calm Ambient Atmosphere -->
+  <section class="hero-section" id="hero">
+    <!-- Calm Ambient Floating Mist Spheres -->
+    <div class="hero-ambient-container">
+      <div class="ambient-sphere sphere-calm-teal"></div>
+      <div class="ambient-sphere sphere-slate-mist"></div>
+      <div class="ambient-sphere sphere-glacier"></div>
+      <div class="ambient-sphere sphere-card-aura"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <!-- Unified Single Top Tag with Live Pulse Beacon -->
+          <div class="editorial-tag" data-tooltip="Admissions now open for upcoming academic session">
+            <span class="pulse-dot"></span>
+            <span>Admissions Open 2026–27 • Holistic Academic Excellence</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Holistic Growth &<br />
+            <span class="hero-gradient-text">JEE & NEET</span><br />
+            Excellence.
+          </h1>
+
+          <p class="hero-subtext">
+            At Pariksit, education transcends exam scores. We cultivate the complete student — blending rigorous STEM problem-solving with emotional resilience, moral character, and stress-free focus inspired by timeless Vedic wisdom and guided by mentors from premier institutes.
+          </p>
+
+          <div class="hero-actions-row">
+            <a href="#results" class="btn-pill btn-pill-dark" data-tooltip="Browse verified rank banners">
+              <span>View Results & Posters</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <a href="#about" class="btn-pill btn-pill-outline" data-tooltip="Learn about our 4 pillars of holistic growth">
+              <span>Our Holistic Philosophy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Clean, Perfectly Arranged Hero Card Panel -->
+        <div class="hero-visual-panel">
+          <div class="hero-main-card">
+            <!-- Header Row with Uniformly Arranged Tag Pills -->
+            <div class="hero-card-header">
+              <span class="hero-tag-pill hero-tag-pill-highlight">✦ 2024–2025 Cohort Highlights</span>
+              <span class="hero-tag-pill hero-tag-pill-calm">NIT & VSSUT Mentors</span>
+            </div>
+
+            <!-- AIR 154 Highlight -->
+            <div class="hero-stat-highlight" data-tooltip="Top national percentile in JEE Advanced">AIR 154</div>
+            <p class="hero-stat-desc">
+              Highest rank achieved in JEE Advanced. Top selections across IIT Kharagpur, AIIMS, and premier national institutes.
+            </p>
+
+            <!-- Balanced 3-Column Metrics Grid -->
+            <div class="hero-card-metrics-grid">
+              <div class="hero-card-metric-item" data-tooltip="State shift highest percentile in JEE Main">
+                <div class="card-metric-val">99.87 %ile</div>
+                <div class="card-metric-label">JEE Main Topper</div>
+              </div>
+              <div class="hero-card-metric-item" data-tooltip="Top score achieved in NEET UG">
+                <div class="card-metric-val">695 / 720</div>
+                <div class="card-metric-label">NEET Top Score</div>
+              </div>
+              <div class="hero-card-metric-item" data-tooltip="500+ student selections across premier national institutions">
+                <div class="card-metric-val">500+</div>
+                <div class="card-metric-label">Selections</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Strip (Full Width) -->
+  <div class="metrics-strip">
+    <div class="container" style="padding: 0;">
+      <div class="metrics-grid">
+        <div class="metric-cell" data-tooltip="Benchmark over 5 years of competitive cohorts">
+          <div class="metric-val">98.4%</div>
+          <div class="metric-tit">Qualification Ratio in Competitive Exams</div>
+        </div>
+        <div class="metric-cell" data-tooltip="Direct mentoring by NITian subject leaders">
+          <div class="metric-val">10+</div>
+          <div class="metric-tit">NIT Rourkela & VSSUT Faculty Mentors</div>
+        </div>
+        <div class="metric-cell" data-tooltip="Students placed in premier national institutions">
+          <div class="metric-val">500+</div>
+          <div class="metric-tit">IIT, NIT & Government Medical Selections</div>
+        </div>
+        <div class="metric-cell" data-tooltip="Gita-based mindfulness and anxiety detachment">
+          <div class="metric-val">100%</div>
+          <div class="metric-tit">Values & Stress Management Mentoring</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT US & MAHABHARATA / GITA PEDAGOGY SECTION -->
+  <section class="section-wrapper" id="about">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="editorial-tag">
+            <span class="editorial-bullet">*</span>
+            <span>Our Foundation & Mahabharata Heritage</span>
+          </div>
+          <h2 class="section-heading">Academics Rooted in Character & Dharma</h2>
+        </div>
+        <p class="section-caption">
+          Named after King Parikshit of the Mahabharata — the noble seeker of ultimate wisdom. We nurture intellectual sharpness alongside ethical integrity and mental equanimity.
+        </p>
+      </div>
+
+      <!-- About Intro & Founder Video Block -->
+      <div class="about-hero-block">
+        <div class="about-intro-card">
+          <h3 style="font-size: 1.55rem; margin-bottom: 16px; line-height: 1.3;">
+            Beyond Examination Ranks: Cultivating True Leaders for Life
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
+            At Pariksit, our educational philosophy is dedicated to the timeless teachings of <strong>Lord Krishna</strong>. We believe that genuine education does not merely train the intellect to solve numerical equations, but empowers the student with moral courage, mental composure, and selfless focus.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            Drawing inspiration from the <em>Bhagavad Gita</em> and the <em>Mahabharata</em>, we guide students through the intense pressures of JEE and NEET with a steadfast mind (*Sthitaprajna*), transforming competitive preparation into a noble journey of personal mastery.
+          </p>
+        </div>
+
+        <!-- Founder Spotlight Video Card -->
+        <div class="founder-video-card" data-tooltip="Watch video message from Director Yogesh Prajapati">
+          <div class="founder-video-wrapper">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/8AhNn-9I7nA?rel=0" 
+              title="Message from Founder & Director Yogesh Prajapati — Pariksit Coaching Institute" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              class="founder-video-iframe"
+            ></iframe>
+          </div>
+          <div class="founder-meta-header">
+            <img src="images/teachers/thumbs/yogesh-prajapati.webp" alt="Yogesh Prajapati" class="founder-avatar-mini" />
+            <div class="founder-info-col">
+              <span class="founder-name-text">Yogesh Prajapati</span>
+              <span class="founder-role-text">Director & Senior Mentor • NIT Rourkela Alumni</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Lord Krishna Line Art Card -->
+      <div class="krishna-lineart-card">
+        <div>
+          <div class="editorial-tag" style="margin-bottom: 12px;">
+            <span class="editorial-bullet">✦</span>
+            <span>Sacred Harmony • Dedicated to Lord Krishna</span>
+          </div>
+          <h3 style="font-size: 1.6rem; line-height: 1.25; margin-bottom: 14px; font-family: var(--font-heading);">
+            Harmony of Mind, Intellect & Soul
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.65; margin-bottom: 16px;">
+            Dedicated to Lord Krishna, Pariksit fosters deep concentration, moral integrity, and analytical mastery. Just as the serene melody of the divine flute brings absolute focus and stillness to the mind, our mentorship empowers students to conquer intense competitive challenges with tranquil clarity.
+          </p>
+          <div style="display: flex; gap: 20px; font-size: 0.85rem; font-weight: 600; color: var(--accent-calm);">
+            <span>• Karmanye Vadhikaraste</span>
+            <span>• Sthitaprajna Focus</span>
+            <span>• Vidya & Humility</span>
+          </div>
+        </div>
+
+        <!-- Masterpiece Lord Krishna Flute Transparent Line Art Image -->
+        <div class="krishna-lineart-img-box" data-tooltip="Sacred Line Art Drawing of Lord Krishna Playing the Flute">
+          <img 
+            src="images/krishna-flute-transparent.png" 
+            alt="Lord Krishna Divine Flute Line Art Drawing" 
+            class="krishna-lineart-img" 
+            loading="lazy" 
+            decoding="async" 
+          />
+        </div>
+      </div>
+
+      <!-- Sacred Shloka Banner -->
+      <div class="shloka-banner-card" style="margin-bottom: 40px;" data-tooltip="Core teaching on selfless action and concentration">
+        <div>
+          <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #94a3b8; margin-bottom: 14px;">
+            * Bhagavad Gita (2.50)
+          </div>
+          <div class="shloka-sanskrit">
+            योगः कर्मसु कौशलम्
+          </div>
+          <div class="shloka-translit">
+            "Yogaḥ Karmasu Kauśalam"
+          </div>
+        </div>
+        <div class="shloka-meaning">
+          <strong>Excellence in Action is Yoga.</strong> When student preparation is performed with purity of intent, unwavering focus, and freedom from anxiety over results, supreme mastery is naturally attained.
+        </div>
+      </div>
+
+      <!-- 4 Pillars of Holistic Development with Bespoke Line Art Icons -->
+      <div class="about-pillars-grid">
+        <!-- Pillar I -->
+        <div class="pillar-card" data-tooltip="Physics, Chemistry, Maths & Biology conceptual clarity">
+          <div class="pillar-icon-box">
+            <!-- Line Art: Sacred Knowledge Manuscript & Compass -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <line x1="12" y1="6" x2="16" y2="6"></line>
+              <line x1="12" y1="10" x2="16" y2="10"></line>
+            </svg>
+          </div>
+          <div class="pillar-tag">Pillar I</div>
+          <h3 class="pillar-title">Vidya & Buddhi</h3>
+          <p class="pillar-desc">
+            Deep conceptual rigor across Physics, Chemistry, Mathematics, and Biology taught by NITian faculty with analytical clarity.
+          </p>
+        </div>
+
+        <!-- Pillar II -->
+        <div class="pillar-card" data-tooltip="Calmness, focus and stress management under exam pressure">
+          <div class="pillar-icon-box">
+            <!-- Line Art: Dharmic Wheel of Sthitaprajna -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="3"></circle>
+              <line x1="12" y1="2" x2="12" y2="9"></line>
+              <line x1="12" y1="15" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="9" y2="12"></line>
+              <line x1="15" y1="12" x2="22" y2="12"></line>
+            </svg>
+          </div>
+          <div class="pillar-tag">Pillar II</div>
+          <h3 class="pillar-title">Sthitaprajna</h3>
+          <p class="pillar-desc">
+            Mental poise under examination stress. Practicing detachment from anxiety (*Karmanye Vadhikaraste*) for flawless calm in exam halls.
+          </p>
+        </div>
+
+        <!-- Pillar III -->
+        <div class="pillar-card" data-tooltip="Developing humility, ethics and respect for parents & society">
+          <div class="pillar-icon-box">
+            <!-- Line Art: Shield of Dharma & Upright Bow -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <line x1="12" y1="7" x2="12" y2="17"></line>
+            </svg>
+          </div>
+          <div class="pillar-tag">Pillar III</div>
+          <h3 class="pillar-title">Dharma & Character</h3>
+          <p class="pillar-desc">
+            Instilling timeless ethical values: truthfulness, humility, gratitude towards parents and teachers, and compassionate societal leadership.
+          </p>
+        </div>
+
+        <!-- Pillar IV -->
+        <div class="pillar-card" data-tooltip="Direct 1-on-1 personal mentorship by senior faculty">
+          <div class="pillar-icon-box">
+            <!-- Line Art: Sacred Mentor Guiding Beacon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v8"></path>
+              <path d="m4.93 10.93 1.41 1.41"></path>
+              <path d="M2 18h2"></path>
+              <path d="M20 18h2"></path>
+              <path d="m19.07 10.93-1.41 1.41"></path>
+              <path d="M22 22H2"></path>
+              <path d="m8 22 4-10 4 10"></path>
+            </svg>
+          </div>
+          <div class="pillar-tag">Pillar IV</div>
+          <h3 class="pillar-title">Guru-Shishya</h3>
+          <p class="pillar-desc">
+            Direct, daily mentorship where educators act as academic coaches, moral anchors, and life counselors for every enrolled student.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analytics & Success Graph Section -->
+  <section class="section-wrapper section-wrapper-alt" id="analytics">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="editorial-tag">
+            <span class="editorial-bullet">*</span>
+            <span>Performance Trajectory</span>
+          </div>
+          <h2 class="section-heading">Success Graph & Metrics</h2>
+        </div>
+        <p class="section-caption">
+          Systematic analytics benchmarked across 24 full-length diagnostic mocks over the 2-year preparation cycle.
+        </p>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="analytics-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Score Conversion Rates</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Percentage of enrolled students exceeding national benchmark thresholds in final examinations.
+          </p>
+
+          <div class="metric-bar-group">
+            <div class="metric-bar-row">
+              <div class="bar-meta">
+                <span>JEE Main 99+ Percentile Conversion</span>
+                <span style="color: var(--accent-calm);">88.2%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-progress" style="width: 88.2%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-bar-row">
+              <div class="bar-meta">
+                <span>NEET 600+ Marks Benchmark</span>
+                <span style="color: var(--accent-calm);">82.6%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-progress" style="width: 82.6%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-bar-row">
+              <div class="bar-meta">
+                <span>NTSE & State Scholarship Qualification</span>
+                <span style="color: var(--accent-calm);">94.5%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-progress" style="width: 94.5%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Academic Methodology</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+              Pariksit mock exams replicate the exact exam environment, countdown timers, sectional boundaries, and negative marking standards prescribed by national examination authorities.
+            </p>
+          </div>
+
+          <div style="background: rgba(241, 245, 249, 0.9); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 24px; margin-top: 24px;">
+            <div style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-calm); margin-bottom: 6px;">
+              Continuous Monitoring
+            </div>
+            <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">
+              Automated parent performance briefings dispatched following every major diagnostic evaluation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hall of Fame / Official Results Posters Section -->
+  <section class="section-wrapper" id="results">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="editorial-tag">
+            <span class="editorial-bullet">*</span>
+            <span>Hall of Fame</span>
+          </div>
+          <h2 class="section-heading">Verified Student Results & Banners</h2>
+        </div>
+        <p class="section-caption">
+          Official rank posters and cohort achievements from Pariksit Coaching Institute. Click any banner to inspect high resolution.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs-row">
+        <button class="tab-pill result-tab active" data-cat="all" onclick="renderResultPosters('all')" data-tooltip="Show all verified rank posters">All Results</button>
+        <button class="tab-pill result-tab" data-cat="jee" onclick="renderResultPosters('jee')" data-tooltip="Filter JEE Main & Advanced toppers">JEE (Main & Advanced)</button>
+        <button class="tab-pill result-tab" data-cat="neet" onclick="renderResultPosters('neet')" data-tooltip="Filter NEET medical qualifiers">NEET (UG)</button>
+        <button class="tab-pill result-tab" data-cat="psat" onclick="renderResultPosters('psat')" data-tooltip="Filter NTSE state merit list">PSAT & NTSE Foundation</button>
+        <button class="tab-pill result-tab" data-cat="all-star" onclick="renderResultPosters('all-star')" data-tooltip="School & city felicitations">Overall & School Felicitations</button>
+      </div>
+
+      <div class="results-poster-grid" id="resultsGrid">
+        <!-- Results posters populated dynamically via main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty & Mentors Section with Real Photos -->
+  <section class="section-wrapper section-wrapper-alt" id="faculty">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="editorial-tag">
+            <span class="editorial-bullet">*</span>
+            <span>Faculty Board</span>
+          </div>
+          <h2 class="section-heading">Our Mentors</h2>
+        </div>
+        <p class="section-caption">
+          Experienced educators from premier technical and research institutions with verified credentials.
+        </p>
+      </div>
+
+      <!-- Faculty Filter Tabs -->
+      <div class="filter-tabs-row">
+        <button class="tab-pill faculty-tab active" data-sub="all" onclick="renderFaculty('all')" data-tooltip="Show all faculty members">All Mentors</button>
+        <button class="tab-pill faculty-tab" data-sub="physics" onclick="renderFaculty('physics')" data-tooltip="Physics specialists">Physics</button>
+        <button class="tab-pill faculty-tab" data-sub="chemistry" onclick="renderFaculty('chemistry')" data-tooltip="Chemistry specialists">Chemistry</button>
+        <button class="tab-pill faculty-tab" data-sub="maths" onclick="renderFaculty('maths')" data-tooltip="Mathematics specialists">Mathematics</button>
+        <button class="tab-pill faculty-tab" data-sub="biology" onclick="renderFaculty('biology')" data-tooltip="NEET Biology specialists">Biology</button>
+      </div>
+
+      <div class="faculty-grid-layout" id="facultyGrid">
+        <!-- Faculty populated dynamically via main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus & Learning Environment Section -->
+  <section class="section-wrapper" id="facilities">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="editorial-tag">
+            <span class="editorial-bullet">*</span>
+            <span>Learning Infrastructure</span>
+          </div>
+          <h2 class="section-heading">Campus & Environment</h2>
+        </div>
+        <p class="section-caption">
+          Purpose-built academic infrastructure designed for deep conceptual concentration and examination simulation.
+        </p>
+      </div>
+
+      <div class="facilities-quad-grid">
+        <div class="facility-card-item" data-tooltip="Air-conditioned multimedia lecture spaces">
+          <div class="facility-number">01</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Acoustic Smart Classrooms</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+            Fully air-conditioned lecture halls equipped with interactive presentation boards and ergonomic seating for distraction-free lectures.
+          </p>
+        </div>
+
+        <div class="facility-card-item" data-tooltip="NTA-mirrored CBT computer examination lab">
+          <div class="facility-number">02</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Computer-Based Test Lab</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+            Dedicated online exam simulation lab mirroring the exact NTA interface, timers, and sectional navigation of JEE and NEET.
+          </p>
+        </div>
+
+        <div class="facility-card-item" data-tooltip="Dedicated 1-on-1 problem-solving chambers">
+          <div class="facility-number">03</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">1-on-1 Mentoring Chambers</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+            Private consultation spaces for daily doubt clearance directly with NITian subject directors.
+          </p>
+        </div>
+
+        <div class="facility-card-item" data-tooltip="National problem archives & Olympiad material">
+          <div class="facility-number">04</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Curated Reference Library</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+            Quiet self-study reading room stocked with advanced national problem collections, NCERT archives, and Olympiad problem sets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Width Philosophy & Ethos Statement with Mahabharata Chariot Line Art Backdrop -->
+  <section class="philosophy-banner">
+    <!-- Subtle Chariot Line Art Watermark -->
+    <svg class="philosophy-lineart-watermark" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="150" r="120" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="6 6"/>
+      <circle cx="250" cy="150" r="80" stroke="#ccfbf1" stroke-width="1"/>
+      <line x1="250" y1="30" x2="250" y2="270" stroke="#ffffff" stroke-width="1"/>
+      <line x1="130" y1="150" x2="370" y2="150" stroke="#ffffff" stroke-width="1"/>
+    </svg>
+
+    <div class="container">
+      <div class="editorial-tag" style="background: rgba(255,255,255,0.1); color: #ccfbf1; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.18);" data-tooltip="Ethical guiding principle of Pariksit">
+        <span class="editorial-bullet" style="color: #ccfbf1;">✦</span>
+        <span>Pariksit Academic & Dharmic Ethos</span>
+      </div>
+      <blockquote class="quote-editorial">
+        "To join the top 1%, you have to do what 99% won't."
+      </blockquote>
+      <div class="quote-subline">
+        कर्मण्येवाधिकारस्ते मा फलेषु कदाचन
+      </div>
+      <div class="quote-author">
+        Pariksit Incorporation India Private Limited • Dedicated to Divine Knowledge & Character
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions & Campus Hub Section -->
+  <section class="section-wrapper" id="admissions">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="editorial-tag">
+            <span class="editorial-bullet">*</span>
+            <span>Admissions & Inquiry</span>
+          </div>
+          <h2 class="section-heading">Campus & Contact</h2>
+        </div>
+        <p class="section-caption">
+          Connect directly with our admissions and counseling desk at the Rourkela Center.
+        </p>
+      </div>
+
+      <div class="contact-grid-layout">
+        <!-- Contact Information Card -->
+        <div class="contact-box">
+          <h3 style="font-size: 1.5rem; margin-bottom: 24px;">Admissions Desk</h3>
+
+          <div class="contact-info-entry">
+            <div class="contact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">Main Academic Center</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">
+                Pariksit Learning Complex, Sector 5<br />
+                Near NIT Rourkela Campus, Rourkela, Odisha 769008
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-entry">
+            <div class="contact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">Admissions Helpline</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                +91 94370 00000 / +91 94380 00000
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-entry">
+            <div class="contact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;">Email Inquiries</div>
+              <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                admissions@pariksit.ac.in
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons: WhatsApp & Google Maps -->
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-light); display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://wa.me/919437000000?text=Hello%20Pariksit%20Institute%2C%20I%20would%20like%20to%20inquire%20about%20admissions." target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-dark" style="flex: 1; min-width: 150px;" data-tooltip="Chat on WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.19c-.24.68-1.39 1.3-1.92 1.38-.5.08-1.12.11-3.64-.93-2.14-.89-3.52-3.08-3.63-3.22-.11-.15-.86-1.15-.86-2.19s.54-1.55.73-1.77c.19-.22.42-.27.56-.27.14 0 .28 0 .4.01.13.01.3.06.46.43.17.39.58 1.42.63 1.53.05.11.08.24.01.38-.07.14-.11.23-.22.36-.11.13-.23.29-.33.39-.11.11-.23.23-.1.45.13.22.58.96 1.24 1.55.85.76 1.57.99 1.79 1.1.22.11.35.09.48-.06.13-.15.56-.65.71-.87.15-.22.3-.18.5-.11.2.07 1.29.61 1.51.72.22.11.37.17.42.27.06.09.06.56-.18 1.24z"/>
+              </svg>
+              <span>WhatsApp Chat</span>
+            </a>
+
+            <a href="https://maps.google.com/?q=Sector+5+Rourkela+Odisha" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-outline" style="flex: 1; min-width: 150px;" data-tooltip="Navigate to campus on Google Maps">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Admissions Booking Form with Custom Accessible Dropdown -->
+        <div class="contact-box">
+          <h3 style="font-size: 1.5rem; margin-bottom: 24px;">Schedule Counseling</h3>
+          <form id="admissionsForm" onsubmit="event.preventDefault();">
+            <div class="form-field">
+              <label class="field-label" for="studentName">Student Full Name</label>
+              <input type="text" id="studentName" class="field-input" placeholder="e.g. Rahul Sharma" required />
+            </div>
+
+            <div class="form-field">
+              <label class="field-label" for="contactPhone">Guardian Mobile Number</label>
+              <input type="tel" id="contactPhone" class="field-input" placeholder="+91 98765 43210" required />
+            </div>
+
+            <!-- Custom Modern Dropdown Selector -->
+            <div class="form-field">
+              <label class="field-label" id="programLabel">Target Program / Batch</label>
+              <div class="custom-select-wrapper" id="programSelect">
+                <div class="custom-select-trigger" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="programLabel">
+                  <span class="custom-select-label placeholder" id="selectedProgramLabel">Select Academic Program</span>
+                  <svg class="custom-select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+                <div class="custom-select-options" role="listbox">
+                  <div class="custom-option" role="option" data-value="jee-2027" aria-selected="false">
+                    <div class="option-content">
+                      <span class="option-title">JEE Advanced Two-Year (Class 11)</span>
+                      <span class="option-sub">Integrated Foundation + Advanced Mastery</span>
+                    </div>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-option" role="option" data-value="neet-2027" aria-selected="false">
+                    <div class="option-content">
+                      <span class="option-title">NEET UG Medical Pinnacle (Class 11)</span>
+                      <span class="option-sub">Full NCERT Line-by-Line + Intensive Labs</span>
+                    </div>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-option" role="option" data-value="repeater" aria-selected="false">
+                    <div class="option-content">
+                      <span class="option-title">Dropper / Target Intensive (Class 12 Passed)</span>
+                      <span class="option-sub">Daily High-Yield Problem Sets & Full Mocks</span>
+                    </div>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-option" role="option" data-value="foundation" aria-selected="false">
+                    <div class="option-content">
+                      <span class="option-title">Junior STEM Foundation (Class 8-10)</span>
+                      <span class="option-sub">Olympiad, NTSE & Analytical Logic Prep</span>
+                    </div>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" id="programInput" name="program" value="" />
+            </div>
+
+            <button type="submit" class="btn-pill btn-pill-dark" style="width: 100%; margin-top: 10px;" data-tooltip="Submit your inquiry to receive program handbook">
+              Request Callback & Syllabus
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Contribution Section -->
+  <section class="section-wrapper section-wrapper-alt" id="creator" style="border-top: 1px solid var(--border-light); padding: 50px 0;">
+    <div class="container">
+      <div class="student-contribution-card">
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">
+            Created by a Student of Pariksit
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; max-width: 680px;">
+            This website was designed and developed by a student of Pariksit Coaching Institute as a contribution to the institute.
+          </p>
+        </div>
+        <div>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-outline" data-tooltip="View source code on GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>View on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Width Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <img src="images/logo.png" alt="Pariksit Logo" style="height: 28px; width: auto;" />
+          <span style="font-weight: 700; color: var(--text-primary);">Pariksit Institute</span>
+          <span>© 2026 Pariksit Inc. All rights reserved.</span>
+          <span style="color: var(--text-tertiary);">•</span>
+          <span style="color: var(--accent-calm); font-weight: 600;">Created by a Student of Pariksit</span>
+        </div>
+        <div style="display: flex; gap: 24px; font-size: 0.88rem;">
+          <a href="#about" style="color: var(--text-secondary); text-decoration: none;">Philosophy</a>
+          <a href="#results" style="color: var(--text-secondary); text-decoration: none;">Results</a>
+          <a href="#faculty" style="color: var(--text-secondary); text-decoration: none;">Faculty</a>
+          <a href="#facilities" style="color: var(--text-secondary); text-decoration: none;">Campus</a>
+          <a href="#admissions" style="color: var(--text-secondary); text-decoration: none;">Admissions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for High-Resolution Result Posters -->
+  <div class="lightbox-backdrop" id="lightboxModal">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" data-tooltip="Close lightbox">✕</button>
+      <img src="" alt="Result Poster" class="lightbox-img" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Scripts with Cache Buster -->
+  <script src="js/data.js?v=32"></script>
+  <script src="js/main.js?v=32"></script>
+</body>
+</html>
