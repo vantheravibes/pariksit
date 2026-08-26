@@ -1459,8 +1459,51 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
   font-size: 0.88rem;
   color: var(--text-secondary);
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-img {
+  height: 26px;
+  width: auto;
+}
+
+.footer-company-name {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.footer-credits-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding-left: 36px;
+}
+
+.footer-credit-sep {
+  color: var(--text-tertiary);
+}
+
+.footer-student-credit {
+  color: var(--accent-calm);
+  font-weight: 600;
 }
 
 /* Lightbox Modal for Result Posters */
@@ -1767,7 +1810,10 @@ h1, h2, h3, h4, h5, h6 {
   .student-contribution-card { padding: 24px 20px; flex-direction: column; align-items: stretch; }
   .student-contribution-card .btn-pill { width: 100%; text-align: center; }
 
-  .footer-row { flex-direction: column; gap: 16px; text-align: center; }
+  .footer-row { flex-direction: column; gap: 20px; text-align: center; }
+  .footer-brand-col { align-items: center; text-align: center; }
+  .footer-brand-row { justify-content: center; }
+  .footer-credits-row { padding-left: 0; justify-content: center; flex-wrap: wrap; }
   .footer-row > div:last-child { flex-wrap: wrap; justify-content: center; gap: 16px; }
 
   .lightbox-container { padding: 10px; width: 96vw; }
