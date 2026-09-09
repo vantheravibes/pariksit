@@ -8,7 +8,7 @@ A modern, high-performance web platform for **Pariksit Coaching Institute**, a p
 
 ## 🌟 Highlights
 - **Nordic Calm Minimalist Design**: Deep Obsidian (`#0f172a`), Serene Sage Teal (`#0f766e`), and Titanium Slate (`#64748b`).
-- **Holistic Philosophy & STEM Rigor**: Blends competitive JEE/NEET preparation with character building and Bhagavad Gita wisdom.
+- **Holistic Philosophy & STEM Rigor**: Blends competitive JEE/NEET preparation with character building, scientific temperament, and ethical leadership.
 - **Responsive Architecture**: Fully optimized for mobile phones, tablets, and desktop displays.
 - **Mobile Navigation Drawer**: Slide-in mobile drawer with fast section navigation and synchronized live search.
 - **High-Resolution Results Gallery**: Lightbox modal for inspecting verified rank posters and toppers.
@@ -27,7 +27,6 @@ pariksit-coaching-website/
 │   └── main.js                 # Application logic (Search, Lightbox, ScrollSpy, Drawer)
 ├── images/
 │   ├── logo.png                # Official brand logo
-│   ├── krishna-flute-transparent.png # Lord Krishna line art
 │   ├── teachers/               # Faculty portraits & WebP thumbnails
 │   └── results/                # Verified rank banners & WebP thumbnails
 └── README.md

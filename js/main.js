@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
   initLightbox();
   initScrollSpy();
-  initScrollProgressBar();
+  initPillBorderProgress();
   initCustomSelect();
   initTooltips();
   initFormSubmissions();
@@ -60,18 +60,78 @@ function initMobileNavigation() {
   }
 }
 
-/* Horizontal Scroll Progress Bar Indicator */
-function initScrollProgressBar() {
-  const progressBar = document.getElementById('scrollProgressBar');
-  if (!progressBar) return;
+/* Bidirectional Revolving Pill Border Progress Indicator (Starts Center, Travels Both Ways) */
+function initPillBorderProgress() {
+  const island = document.querySelector('.floating-nav-island');
+  const svg = document.getElementById('pillBorderSvg');
+  const track = document.getElementById('pillBorderTrack');
+  const wingLeft = document.getElementById('pillBorderWingLeft');
+  const wingRight = document.getElementById('pillBorderWingRight');
+  if (!island || !svg || !wingLeft || !wingRight) return;
+
+  let halfLength = 0;
+
+  function resizePillBorder() {
+    const w = island.offsetWidth;
+    const h = island.offsetHeight;
+    if (!w || !h) return;
+
+    const strokeWidth = 2;
+    const offset = strokeWidth / 2;
+    const rectW = Math.max(0, w - 2 * offset);
+    const rectH = Math.max(0, h - 2 * offset);
+    const r = rectH / 2;
+
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    
+    if (track) {
+      track.setAttribute('x', offset);
+      track.setAttribute('y', offset);
+      track.setAttribute('width', rectW);
+      track.setAttribute('height', rectH);
+      track.setAttribute('rx', r);
+      track.setAttribute('ry', r);
+    }
+
+    const topY = offset;
+    const botY = h - offset;
+    const centerX = w / 2;
+    const rightX = w - offset - r;
+    const leftX = offset + r;
+
+    // Right Wing: Starts Top-Center -> moves clockwise across top-right -> right arc -> bottom-center
+    const dRight = `M ${centerX} ${topY} L ${rightX} ${topY} A ${r} ${r} 0 0 1 ${rightX} ${botY} L ${centerX} ${botY}`;
+    wingRight.setAttribute('d', dRight);
+
+    // Left Wing: Starts Top-Center -> moves counter-clockwise across top-left -> left arc -> bottom-center
+    const dLeft = `M ${centerX} ${topY} L ${leftX} ${topY} A ${r} ${r} 0 0 0 ${leftX} ${botY} L ${centerX} ${botY}`;
+    wingLeft.setAttribute('d', dLeft);
+
+    try {
+      halfLength = wingRight.getTotalLength();
+    } catch (e) {
+      halfLength = (rightX - leftX) + Math.PI * r;
+    }
+
+    if (!halfLength || isNaN(halfLength)) {
+      halfLength = (rightX - leftX) + Math.PI * r;
+    }
+
+    wingRight.style.strokeDasharray = `${halfLength} ${halfLength}`;
+    wingLeft.style.strokeDasharray = `${halfLength} ${halfLength}`;
+    updateProgress();
+  }
 
   function updateProgress() {
+    if (!halfLength) return;
     const scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if (totalHeight > 0) {
-      const progress = Math.min(100, Math.max(0, (scrollY / totalHeight) * 100));
-      progressBar.style.width = `${progress}%`;
-    }
+    const progress = totalHeight > 0 ? Math.min(1, Math.max(0, scrollY / totalHeight)) : 0;
+    
+    // Symmetrical bidirectional stroke progression: both wings advance from top-center and meet at bottom-center
+    const offset = halfLength * (1 - progress);
+    wingRight.style.strokeDashoffset = offset;
+    wingLeft.style.strokeDashoffset = offset;
   }
 
   let ticking = false;
@@ -85,9 +145,12 @@ function initScrollProgressBar() {
     }
   }, { passive: true });
 
-  window.addEventListener('resize', updateProgress, { passive: true });
+  window.addEventListener('resize', resizePillBorder, { passive: true });
   window.addEventListener('touchmove', updateProgress, { passive: true });
-  updateProgress();
+
+  // Initial calculation and layout stabilization
+  resizePillBorder();
+  setTimeout(resizePillBorder, 150);
 }
 
 /* Viewport-Aware Global Floating Tooltip System (Desktop Hover Only) */
@@ -416,7 +479,7 @@ function renderCustomFaculty(dataList) {
             class="faculty-photo-img" 
             loading="lazy" 
             decoding="async" 
-            onerror="this.onerror=null; this.src='${fullImg}';"
+            onerror="this.onerror=null; if(this.src.indexOf('${fullImg}')===-1){this.src='${fullImg}';}else{this.src='images/teachers/yogesh-prajapati.jpg';}"
           />
         </div>
         <div class="faculty-name-title">${teacher.name}</div>
